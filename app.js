@@ -9,7 +9,7 @@ function getMusic(){
 function drawSongs(songList){
   var template = "";
     for(var i = 0; i < songList.length; i++){
-      template +=`<div class='row'>
+      template +=`<div class='row songs'>
       <div class='col col-xs-12'><img src="${songList[i].albumArt}"></div>
       <div id='songTitle' class='col col-xs-3'><h4> Title: ${songList[i].title}</h4></div>
       <div class='col col-xs-3'>Album: ${songList[i].collection}</div>

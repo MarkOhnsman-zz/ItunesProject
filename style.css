@@ -56,19 +56,22 @@ body{
 }
 
 
-.songs{
-  height:20%;
-  /*border: 10px groove lawngreen;*/
-  /*padding: 20%;*/
-  border-radius: 10px;
-  float:left;
-
-}
-
 .music-image img{
     height: 200px;
     width: 100%;
     }
+
+
+
+.songs{
+    background: darkslategrey; 
+    margin: 1%; 
+    opacity: 0.9; 
+    padding-right: 2%; 
+
+
+
+}
 
 
 
