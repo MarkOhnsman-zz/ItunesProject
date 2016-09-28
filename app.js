@@ -11,9 +11,11 @@ function drawSongs(songList){
     for(var i = 0; i < songList.length; i++){
       template +=`<div class='row'>
       <div class='col col-xs-12'><img src="${songList[i].albumArt}"></div>
-      <div id='songTitle' class='col col-xs-4'><h4> Title: ${songList[i].title}</h4></div>
-      <div id = 'aristName' class = "col col-xs-4">Artist: ${songList[i].artist}</div>
-      <div class='col col-xs-4'><audio controls><source src="${songList[i].preview}" type="audio/ogg"></audio></div>
+      <div id='songTitle' class='col col-xs-3'><h4> Title: ${songList[i].title}</h4></div>
+      <div class='col col-xs-3'>Album: ${songList[i].collection}</div>
+      
+      <div id = 'aristName' class = "col col-xs-3">Artist: ${songList[i].artist}</div>
+      <div class='col col-xs-3'><audio controls><source src="${songList[i].preview}" type="audio/ogg"></audio></div>
       <div class = 'col col-xs-6'>Price: ${songList[i].price} </div>
       </div>`
     }
