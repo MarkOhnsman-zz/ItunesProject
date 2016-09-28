@@ -16,6 +16,12 @@ body{
     padding: 5%;
 } 
 
+.top:hover{
+    background-image: url('https://media.giphy.com/media/xTiTnAWsCOrpoyyat2/giphy.gif'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top; 
+}
 
  h1{
     color: #e0dfdc;
@@ -38,7 +44,7 @@ body{
       0 13px 0 #161616, 
       0 14px 0 #141414, 
       0 15px 0 #121212, 
-      0 22px 30px rgba(0, 0, 0, 0.9);
+      0 42px 30px rgba(0, 0, 0, 0.9);
   }
 
 
@@ -54,10 +60,19 @@ body{
     border-radius: 125px;  
 }
 
+.form-section:hover{
+  background-image: url('http://i.imgur.com/JzlLtkX.gif'); 
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    background-position: top; 
+}
+
+
+
 
 .songs{
     background: darkslategrey; 
-    margin-top: 0.5%; 
+    margin: 2%; 
     opacity: 0.9;
 }
 

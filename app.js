@@ -10,18 +10,12 @@ function drawSongs(songList){
   var template = "";
     for(var i = 0; i < songList.length; i++){
       template +=`<div class='row songs'>
-      <div class='col col-xs-12  col-xl-12'><img src="${songList[i].albumArt}"></div>
-
-      <div class='col col-xs-6  col-xl-3'><h4> Title: ${songList[i].title}</h4></div>
-     
-      <div class='col col-xs-6 col-xl-3'><audio controls id='audioId'><source src="${songList[i].preview}" type="audio/ogg"></audio></div>
-     
-      <div class ='col col-xs-6 col-xl-3'>Artist: ${songList[i].artist}</div>
-     
-      <div class='col col-xs-6 col-xl-3'>  Album: ${songList[i].collection}</div>
-     
-      <div class ='col col-xs-6 col-xl-6'>Price: ${songList[i].price} </div>
-     
+      <div class='col col-xs-12  col-lg-12'><img src="${songList[i].albumArt}"></div>
+      <div class='col col-xs-6  col-lg-3'><h4> Title: ${songList[i].title}</h4></div>
+      <div class='col col-xs-6 col-lg-3'><audio controls id='audioId'><source src="${songList[i].preview}" type="audio/ogg"></audio></div>
+      <div class ='col col-xs-6 col-lg-3'>Artist: ${songList[i].artist}</div>
+      <div class='col col-xs-6 col-lg-3'>  Album: ${songList[i].collection}</div>
+      <div class ='col col-xs-6 col-lg-6'>Price: ${songList[i].price} </div>
       </div>`
     }
     document.getElementById('songBox').innerHTML = template; 
