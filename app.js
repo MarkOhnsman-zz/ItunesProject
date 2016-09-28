@@ -15,9 +15,21 @@ function drawSongs(songList){
       <div class='col col-xs-3'>Album: ${songList[i].collection}</div>
       
       <div id = 'aristName' class = "col col-xs-3">Artist: ${songList[i].artist}</div>
-      <div class='col col-xs-3'><audio controls><source src="${songList[i].preview}" type="audio/ogg"></audio></div>
+      <div class='col col-xs-3'><audio controls id='audioId'><source src="${songList[i].preview}" type="audio/ogg"></audio></div>
       <div class = 'col col-xs-6'>Price: ${songList[i].price} </div>
       </div>`
     }
     document.getElementById('songBox').innerHTML = template; 
 }
+
+
+////function for stopping music////
+document.addEventListener('play', function(e){
+ var audios = document.getElementsByTagName('audio');
+ for(var i = 0, len = audios.length; i < len;i++){
+     if(audios[i] != e.target){
+         audios[i].pause();
+     }
+ }
+}, 
+true);
