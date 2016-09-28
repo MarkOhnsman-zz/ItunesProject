@@ -7,15 +7,14 @@ body{
     background-attachment: fixed; 
     opacity: 0.7; 
   } 
-  /*http://9to5animations.com/wp-content/uploads/2015/11/music-beats-graph.gif*/
-
+ 
 .top{ 
     font-size: 200%;
     text-align: center;
     background: #2D3232; 
     border: 26px groove whitesmoke; 
     padding: 5%;
- }
+} 
 
 
  h1{
@@ -47,7 +46,7 @@ body{
 
 
 .form-section{
-    margin-top: 10%;
+    margin-top: 15%;
     padding-top:5%;
     padding-bottom:5%;
     border: 16px groove ghostwhite; 
@@ -56,20 +55,11 @@ body{
 }
 
 
-.music-image img{
-    height: 200px;
-    width: 100%;
-    }
-
-
-
 .songs{
     background: darkslategrey; 
-    margin: 1%; 
+    margin: 3%; 
     opacity: 0.9; 
-    padding-right: 2%; 
-
-
+  
 
 }
 
