@@ -81,7 +81,13 @@ body{
 }
 
 
+
 .audioClass{
-    width: 100%; 
+    width: 100%;     
+    opacity: 0.1
+}
+
+.audioClass:hover{
+opacity:1.0
 }
 
